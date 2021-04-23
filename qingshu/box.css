@@ -1,0 +1,27 @@
+html{
+    font-size: 23px;
+}
+#box1{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 15vh;  
+    margin-top: 8vh;
+    margin-left: 8vw;
+    border-radius:5%;
+    background-color: rgba(246,246,246,0.7);
+    height: 75%;
+    width: 80%;
+    color:hsl(320, 72%, 56%);
+    font-family:'QXyingbikai276f20fb0923365';
+    font-size: 1rem;/*24 -> 手机*/
+    font-weight: 550;
+}
+
+@media screen and (min-width: 800px) {
+ html{
+    font-size: 35px;
+}
+}
+
+
+/*ss*/

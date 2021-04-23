@@ -1,0 +1,13 @@
+/*背景样式部分（by AEI）*/
+*{
+    margin: 0;
+}
+#bodybac{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/t01f46fbf3d6cc7efb2-min.jpg);  
+    background-position: 70%;
+    margin: 0;
+    background-size: cover;
+    position: absolute;
+}
