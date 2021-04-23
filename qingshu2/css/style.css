@@ -14,6 +14,7 @@ p{
 	font-size: 24px;
 	color: #757575;
 }
+/*改成flex布局，可以更好的控制布局 byaei*/
 #wrap{
 	display: flex;
 	flex-flow: column;
@@ -23,6 +24,7 @@ p{
 	margin: 20px auto 0;
 	height: 1000px;
 }
+/*把标题弄好看点 byaei*/
 h1{
 	margin-bottom: 20px;
 	text-align: center;
@@ -30,6 +32,7 @@ h1{
 	font-family: tahoma;
 	color: black;
 }
+
 #form-wrap{
 	overflow: hidden;
 	height: 447px;
@@ -37,7 +40,9 @@ h1{
 	top: 0px;
 	transition: all 1s ease-in-out .3s;
 }
+/*装上信头*/
 #form-wrap:before{
+	border: 0;
 	content: "";
 	position: absolute;
 	bottom: 128px;
@@ -46,6 +51,7 @@ h1{
 	width: 530px;
 	height: 317px;
 }
+
 #form-wrap:after{
 	content: "";
 	position: absolute;
@@ -59,10 +65,12 @@ h1{
 #form-wrap.hide:before{
 	display: none;
 }
+/*把信升起来*/
 #form-wrap:hover{
 	height: 777px;
 	top: -200px;
 }
+/*信纸*/
 form{
 	background: url('../img/letter_bg.png');
 	position: relative;
@@ -76,15 +84,11 @@ form{
 	border-right: 3px;
 	transition: all 1s ease-in-out .3s;
 }
+/*将信纸选中和最后的信纸升起绑定到一起*/
 #form-wrap:hover form{
 	height: 530px;
 }
-lable{
-	margin: 11px 20px 0 0;
-	font-size: 15px;
-	color: gray;
-	text-transform: uppercase;
-}
+
 input[type=text], textarea{
 	font: 14px normal uppercase, arial, serif;
 	color: dimgray;
@@ -104,6 +108,9 @@ textarea:focus,
 input[type=text]:focus{
 	background: url('../img/letter_bg.png');
 }
+
+/*渐变效果的运用 byaei*/
+
 #form-wrap input[type=submit]{
 	position: relative;
 	font-family: tahoma;
@@ -121,4 +128,22 @@ input[type=text]:focus{
 	z-index: 1;
 	opacity: 1;
 	transition: opacity 0.5s ease-in-out 1.3s;
+}
+.form1 p{
+	display: block;
+	
+}
+.form1 img{
+	margin-top: 3px;
+	width: 100%;
+	border-radius: 10px;
+}
+#box1{
+	margin-top: 5px;
+	text-align: center;
+}
+body{
+
+	background-color: red; /* 浏览器不支持时显示 */
+    background-image: linear-gradient(70deg,#f07c82, #93b5cf);
 }
