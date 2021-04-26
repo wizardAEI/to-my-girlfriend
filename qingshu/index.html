@@ -10,14 +10,6 @@ author @aei
 
 <html lang="ch-ZN">
 <head>
-    <script>
-        function toggleSound() {var music = document.getElementById("vd");//获取ID  
-        console.log(music);
-        if (music.paused) { //判读是否播放  
-        music.play(); //没有就播放  
-    }  
-    }
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,22 +25,30 @@ author @aei
     <link rel="stylesheet" href="box.css">
     <link rel="stylesheet" href="libs/glide/glide.core.min.css">
     <link rel="stylesheet" href="libs/glide/glide.theme.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>见到你，便是三行情诗🌸🌸🌸</title>
     <meta name="referrer" content="no-referrer"/><!--防止防盗链,目的是引用一些其他网页资源-->
 </head>
 <body >
-
-                
+    
+    <audio src=".\music\徐秉龙 - 迪士尼在逃公主.mp3" id="vd" autoplay hidden></audio>            
     <div id="bodybac">
-        <div id="box1">
-        </div>
+        <div class="mengban"></div>
+        <div class="mengban2">也许我爱你，是那种你双眼望着我，我便会倾诉一辈子的情话<br>而你转过身去，我便会收起情话，静静地看你发呆</div>
+        <div id="box1"></div>
     </div>
                 
     
     <script src="弹幕.js"></script>
     <script src="打字机.js"></script>
-
-
+    <script>
+        function toggleSound() {var music = document.getElementById("vd");//获取ID  
+        console.log(music);
+        if (music.paused) { //判读是否播放  
+        music.play(); //没有就播放  
+    }  
+    }
+    </script>
 </body>
 
 </html>

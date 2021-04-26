@@ -1,0 +1,24 @@
+.mengban{
+    z-index: 100;
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(57,62,70,0.4);
+}
+
+.mengban2{
+    z-index: 300;
+    position:absolute;
+    padding-top: 45vh;
+    text-align: center;
+    height: 55vh;
+    width: 100vw;
+    background-image: linear-gradient(70deg,#f07c82, #93b5cf);
+    opacity: 1;
+    transition-property: opacity;
+    transition:3s;
+}
+
+.mengban2:hover{ 
+    opacity: 0;
+}
