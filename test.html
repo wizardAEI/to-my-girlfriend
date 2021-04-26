@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ch-ZN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        
+    <title>Document</title>
+    <style>
+
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+         }
+        .box1{
+            background: cadetblue;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            
+        }
+        body::after{
+            position: absolute;
+            margin-top: 60vh;
+            content: "这是一个时钟,晚安";
+        }
+        body::before{
+            z-index: 1;
+            border-radius: 50%;
+            content: "";
+            width: 5px;
+            height: 5px;
+            transform: translateX(50px);
+            background: black;
+        }
+        .box1::after{
+            position:absolute;
+            left: 50%;
+            content: "";
+            width: 1px;
+            height: 50px;
+            background: black;
+            transition: 60s;
+            transition-timing-function: steps(60,start);
+            transform-origin: bottom;
+        }
+        body:hover .box1::after{
+            transform-origin: bottom;
+            transform:rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+    </div>
+</body>
+</html>
