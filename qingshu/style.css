@@ -1,3 +1,7 @@
+body{
+    width: 100hw;
+    height: 100vh;
+}
 .mengban{
     z-index: 100;
     position:absolute;
@@ -7,6 +11,7 @@
 }
 
 .mengban2{
+    color: rgba(2, 71, 94,0.5);
     z-index: 300;
     position:absolute;
     padding-top: 45vh;
@@ -21,4 +26,18 @@
 
 .mengban2:hover{ 
     opacity: 0;
+}
+.next{
+    color: rgba(208, 173, 211, 0.6);
+    position: absolute;
+    z-index: 1000;
+    bottom: 5vh;
+    right: 3vw;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.next:hover{
+    color: rgba(253, 165, 246, 0.6);
+    transform: scale(1.5);
 }
