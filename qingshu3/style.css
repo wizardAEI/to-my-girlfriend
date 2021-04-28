@@ -1,10 +1,14 @@
 *{
     padding: 0;
     margin: 0;
+    border: 0;
+}
+body{
+    overflow: hidden;
 }
 .box0{
 position: absolute;
-background: cornsilk;
+background: #fefecce6;
 width: 100vw;
 height: 100vh;
 overflow: hidden;
@@ -17,7 +21,11 @@ transition:background-color 3s;
     right: 45vw;
     transition: 3s;
 }
-/*
+.box1{
+    transform:rotate(-3deg);
+    transform-origin: center;
+}
+/*写了会提前转，用来实验的 byaei
 .box1{
     transform:rotate(180deg);
     transform-origin: center;
@@ -37,11 +45,12 @@ transition:background-color 3s;
     height: 10vw;
     width: 10vw;
     border-radius: 50%;
-    background: rgba( 254, 254, 204, 0.90 );
+    background: rgba(254, 254, 204, 0.90);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0.5px );
     -webkit-backdrop-filter: blur( 0.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    cursor: pointer;
 }
 .moon{
     position: absolute;
@@ -49,11 +58,97 @@ transition:background-color 3s;
     height: 10vw;
     width: 10vw;
     border-radius: 50%;
-    background: rgba( 247, 243, 233, 0.90 );
+    background: #f7f3e9e6;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 1.5px );
     -webkit-backdrop-filter: blur( 1.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    cursor: pointer;
 }
+
+#daytxt{
+    width: 100vw;
+    text-align: center;
+    color: #393e46b3;
+    position: absolute;
+    top: 60vh;
+    left: 0;
+    font-size: 40px;
+    transition:1.5s;
+}
+
+.next{
+    color: rgba(168, 187, 156, 0.6);
+    position: absolute;
+    z-index: 1000;
+    bottom: 5vh;
+    right: 3vw;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.next:hover{
+    color: rgba(192, 241, 235, 0.6);
+    transform: scale(1.5);
+}
+
+#star{
+    position: absolute;
+    top: 23vh;
+    right: 20vw;
+    color: #f5f7b2;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(.5,.23,.69,.67),ease;
+    transition-property: transform,opacity;
+    transition-duration:2s,2s;
+    
+}
+
+#star2{
+    position: absolute;
+    top: 15vh;
+    right: 75vw;
+    color: #f5f7b2;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(.5,.23,.69,.67),ease;
+    transition-property: transform,opacity;
+    transition-duration:2s,2s;
+    
+}
+
+#star3{
+    position: absolute;
+    top: 10vh;
+    right: 53vw;
+    color: #f5f7b2;
+    opacity: 0; 
+    transition:opacity 1.5s;
+}
+#star4{
+    position: absolute;
+    top: 40vh;
+    right: 8vw;
+    color: #f5f7b2;
+    opacity: 0; 
+    transition:opacity 1.5s;
+}
+#star5{
+    position: absolute;
+    top: 80vh;
+    right: 85vw;
+    color: #f5f7b2;
+    opacity: 0; 
+    transition:opacity 1.5s;
+}
+
+#cloud{
+    position: absolute;
+    top: 30vh;
+    right: 15vw;
+    transform:scale(2.6,2);
+    color: rgba(255, 255, 255, 0.5);
+    transition: 2s;
+}
+/*    transform: translate(-200vh,100vh);*/
 
 
