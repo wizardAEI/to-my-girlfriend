@@ -21,6 +21,6 @@ function moon()
         }
     let lis2=document.getElementsByClassName('box0');
     for (let i=0;i<lis2.length;i++) {
-        lis2[i].style.backgroundColor='cornsilk';
+        lis2[i].style.backgroundColor='#02475e';
         }
 }
