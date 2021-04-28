@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    border: 0;
+}
+body{
+    z-index: -100;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image:linear-gradient(25deg, #b6b2b8, #a0bbc7, #84c4d6, #5acde5);
+}
+
+
+
+.btn1::before{
+    top:65%;
+    left: 50%;
+    transform:translate(-40%,-50%);
+    z-index: 4;
+    color: rgba(36, 134, 185,0.7);
+    position: absolute;
+    /*transform: translate(31px,18px);*/
+    transition: 2s;
+}
+
+.bj{
+    position: absolute;
+    top:65%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    z-index: 3;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: linear-gradient(108deg, #c51f7c, #aa5496, #8373b2, #328cce);
+    transition: 2s;
+}
+.fr{
+    top:65%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    z-index: 6;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#yinyan{
+    margin-top: 35vh;
+    width: 100vw;
+    text-align: center;
+    transition: 2s;
+}
+
+/*记录一下 现在的z-index 最大6  最小 -100（body）  byaei*/
