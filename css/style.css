@@ -5,6 +5,7 @@
 	outline: none;
 }
 
+
 p{
 	font-family: tahoma;
 	font-size: 24px;
@@ -24,7 +25,7 @@ p{
 
 /*把标题弄好看点 byaei*/
 h1{
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	text-align: center;
 	font-size: 35px;
 	font-family: tahoma;
@@ -132,4 +133,5 @@ form{
 
 body{
     background-image: linear-gradient(70deg,#f07c82, #93b5cf);
+	overflow: hidden;
 }
