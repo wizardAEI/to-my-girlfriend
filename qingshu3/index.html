@@ -12,6 +12,7 @@
     <meta name="referrer" content="no-referrer"/>
 </head>
 <body>
+    <audio src="yutaka hirasaka - eternal moment.mp3" id="vd" autoplay hidden></audio>    
     <div class="box0">
         <div class="box1">
             <div onclick="sun()" class="sun" ></div>
@@ -27,5 +28,14 @@
     <div class="fas fa-star  fa-2x" id="star4"></div>
     <div class="fas fa-star  fa-2x" id="star5"></div>
     <div class="fas fa-cloud fa-4x" id="cloud"></div>
+    <script>
+        function toggleSound() {var music = document.getElementById("vd");//获取ID  
+        console.log(music);
+        if (music.paused) { //判读是否播放  
+        music.play(); //没有就播放  
+    }  
+    }
+    toggleSound();
+    </script>
 </body>
 </html>
