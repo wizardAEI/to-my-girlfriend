@@ -1,17 +1,30 @@
+/*by aei*/
+
 *{
     margin: 0;
     border: 0;
 }
 body{
+    position: absolute;
+    z-index: -200;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, #384757 38%, #1c2a2c 100%);
+    
+    background: linear-gradient(to top left, #422933 38%, #5f8186 100%);
+    background: linear-gradient(to top left, #6e5961 38%, #5f8186 100%);
+}
+#bac{
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: -100;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
-    background-image:linear-gradient(25deg, #b6b2b8, #a0bbc7, #84c4d6, #5acde5);
+    background:linear-gradient(25deg, #b6b2b8, #a0bbc7, #84c4d6, #5acde5);
+    transition: 0.5s;
 }
-
-
-
 .btn1::before{
     top:62.5%;
     left: 49.5%;
@@ -72,7 +85,7 @@ body{
     transition:opacity 2.5s;
 }
 
-/*记录 点击完play 现在所有的的按钮都<-100  max 6*/
+/*记录 点击完play 现在所有的的按钮都<-200  max 6*/
 
 #box{
     opacity: 0;
@@ -113,7 +126,7 @@ body{
 #boxup{
     position: absolute;
     top:3vh;
-    width: 90vw;
+    width: 100vw;
     text-align: center;
     z-index: 0;
     font-size: 1rem;
