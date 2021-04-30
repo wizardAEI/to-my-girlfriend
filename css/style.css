@@ -33,12 +33,13 @@ h1{
 }
 
 #form-wrap{
-	background-color:rgba(200,148,162,0);
+
 	overflow: hidden;
 	height: 447px;
 	position: relative;
 	top: 0px;
-	transition: 2s;
+	transition-property: top,height;
+	transition:2s;
 }
 
 /*装上信头*/
@@ -112,7 +113,9 @@ form{
 #form-wrap:hover input[type=submit]{
 	z-index: 1;
 	opacity: 1;
-	transition: opacity 1s ease-in-out 1.3s;
+	color: rgba(201, 137, 119, 0.5);
+	transition-timing-function:cubic-bezier(1,.01,1,.64);
+	transition: opacity 5s;
 }
 
 .form1 p{
